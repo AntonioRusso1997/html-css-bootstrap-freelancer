@@ -3,3 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: #2c3e50;
+}
+
+.navbar-nav li {
+    display: inline-block;
+}
+
+
+
+/* /Debug */
+
+.debug header {
+    height: 100px;
+}
+
+.debug .navbar {
+    height: 100%;
+}
+
+.debug .navbar .container {
+    height: 100%;
+}
+
+.debug .navbar-brand {
+    background-color: lightblue;
+    height: 100%;
+}
+
+.debug .navbar-nav {
+    background-color: lightcoral;
+    height: 100%;
+}
