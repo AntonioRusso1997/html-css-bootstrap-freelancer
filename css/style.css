@@ -24,11 +24,6 @@ header {
     height: 250px;
 }
 
-#artist-name {
-    color: white;
-}
-
-
 .divider-line {
     content: '';
     display: inline-block;
@@ -48,18 +43,35 @@ header {
 }
 
 #artist-description {
-    font-weight: 400;
-    color: white;
     font-size: 22px;
 }
 .portfolio-box {
+    position: relative;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .portfolio-box img {
     height: 100%;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
+}
+
+.hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
+}
+
+.portfolio-box:hover .hover-img {
+    display: block;
+}
+
+.portfolio-box:hover img {
+    filter: brightness(70%)
 }
 
 h1 {
@@ -69,6 +81,26 @@ h1 {
 h2 {
     font-size: 40px;
 }
+
+.about-text {
+    font-size: 20px;
+}
+
+.social-i {
+    width: 45px;
+    height: 45px;
+}
+
+.freelancer p,
+.location p {
+    font-size: 20px;
+}
+
+.lime {
+    color: lime;
+}
+
+
 /* / Main */
 
 /* Footer */
@@ -79,13 +111,35 @@ h2 {
 .footer-bottom {
     background-color: #2c3e50;
 }
+
+
+.social-i {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.freelancer p,
+.location p {
+    font-size: 20px;
+}
+
+.lime {
+    color: lime;
+    text-decoration: none;
+}
+
+.social-i:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.social-i:hover {
+    color: #3A546D;
+}
 /* / Footer */
 
 /* /Debug */
-
-.debug .navbar {
-    /* height: 80px; */
-}
 
 .debug .navbar .container {
     height: 100%;
